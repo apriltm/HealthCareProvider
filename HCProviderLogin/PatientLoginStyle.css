@@ -27,7 +27,7 @@ small, b, a {
 
 .movebox {
     top: -100px;
-    left: 500px;
+    left: 0px;
     position: relative;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #424242;
@@ -37,17 +37,16 @@ small, b, a {
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-    width: 200px;
     padding: 4px 12px;
     margin: 8px 0;
-    display: inline-block;
+   /* display: inline-block;*/
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* Set a style for all buttons */
-button {
+.ButtonSettings {
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: #3d4044;
     color: white;
@@ -59,14 +58,16 @@ button {
 }
 
     /* Add a hover effect for buttons */
-    button:hover {
+    .ButtonSettings:hover,.cancelSettings:hover {
         opacity: 0.8;
     }
 
 /* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
+.cancelSettings {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    width: 200px;
+    padding: 6px 14px;
     background-color: #f44336;
 }
 
@@ -85,23 +86,14 @@ img.avatar {
 /* Add padding to containers */
 .container {
     /*left: 400px; */
-    width: 520px;
+    right: -450px;
+    position: relative;
+    width: 736px;
 }
 
-/* The "Forgot password" text */
 span.psw {
     float: right;
     padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
+    margin-right: 100px;
+    margin-top: -40px;
 }
