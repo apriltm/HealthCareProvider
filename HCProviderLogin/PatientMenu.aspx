@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PatientMenu.aspx.cs" Inherits="HCProviderLogin.PatientMenu" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="PatientMenu.aspx.cs" Inherits="HCProviderLogin.PatientMenu" %>
 
 <!DOCTYPE html>
 
@@ -14,8 +14,8 @@
                 <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/280-Appointment_calendar_date_month_planner_reminder_schedule_add_plus-64.png" align="left" style="padding-left: 25px;"/><br />
                 <div style="padding-left: 25px;"><small>Schedule An Appointment</small></div>
                 
-                <img src="https://cdn4.iconfinder.com/data/icons/medical-14/512/9-64.png" align="right" style="margin-top: -40px; margin-right: 100px; padding-right: 25px;" />
-                <div style="padding-right: 25px; margin-top: -20px; margin-right: 50px; text-align: right;"><small>Doctors</small></div><br /><br /><br /><br />
+                <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" align="right" style="margin-top: -40px; margin-right: 100px; padding-right: 25px;" />
+                <div style="padding-right: 25px; margin-top: -20px; margin-right: 30px; text-align: right;"><small>Prescriptions</small></div><br /><br /><br /><br />
 
                 <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" align="left" style="padding-left: 25px;" /><br />
                 <div style="padding-left: 25px;"><small>View Appointment Status/Request Appointment Change</small></div>

@@ -104,15 +104,21 @@
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminLoginStyle.css" />
+    <Content Include="AdminMenu.aspx" />
+    <Content Include="AdminMenuStyle.css" />
+    <Content Include="DoctorMenuStyle.css" />
     <Content Include="Global.asax" />
     <Content Include="PatientLoginStyle.css" />
     <Content Include="DoctorLoginStyle.css" />
     <Content Include="PatientMenu.aspx" />
     <Content Include="PatientMenuStyle.css" />
+    <Content Include="ScheduleAppt.aspx" />
+    <Content Include="ScheduleApptStyle.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="PatientLogin.aspx" />
     <Content Include="DoctorLogin.aspx" />
+    <Content Include="DoctorMenu.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminLogin.aspx.cs">
@@ -121,6 +127,13 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.aspx.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.aspx.designer.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -135,6 +148,13 @@
       <DependentUpon>PatientMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleAppt.aspx.cs">
+      <DependentUpon>ScheduleAppt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleAppt.aspx.designer.cs">
+      <DependentUpon>ScheduleAppt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,6 +175,13 @@
     </Compile>
     <Compile Include="DoctorLogin.aspx.designer.cs">
       <DependentUpon>DoctorLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorMenu.aspx.cs">
+      <DependentUpon>DoctorMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorMenu.aspx.designer.cs">
+      <DependentUpon>DoctorMenu.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
