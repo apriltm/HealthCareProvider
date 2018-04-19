@@ -103,13 +103,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
-    <Content Include="AdminLoginStyle.css" />
     <Content Include="AdminMenu.aspx" />
     <Content Include="AdminMenuStyle.css" />
     <Content Include="DoctorMenuStyle.css" />
     <Content Include="Global.asax" />
-    <Content Include="PatientLoginStyle.css" />
-    <Content Include="DoctorLoginStyle.css" />
+    <Content Include="OpeningLoginStyle.css" />
     <Content Include="PatientMenu.aspx" />
     <Content Include="PatientMenuStyle.css" />
     <Content Include="ScheduleAppt.aspx" />
