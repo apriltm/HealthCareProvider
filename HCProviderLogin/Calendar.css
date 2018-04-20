@@ -1,0 +1,63 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    background-color: #f44336;
+    width: 645px;
+    height: 100px;
+    position: relative;
+    background-position: top center;
+    color: #eee;
+    font-size: 36px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+.box {
+    background-color: #cdcfd3;
+    width: 645px;
+    height: 200px;
+}
+
+.daysOfWeek {
+    background-color: #aaa;
+    width: 605px;
+    height: 25px;
+    color: #eee;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: block;
+    margin-top: 0px;
+    z-index: 999;
+}
+
+    .daysOfWeek li {
+        margin-right: 20px;
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+    }
+
+.numberedDays {
+    color: #56585b;
+    font-size: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 600px;
+    height: 100px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -20px;
+    padding: 20px 0;
+}
+
+    .numberedDays li {
+        list-style-type: none;
+        display: inline-block;
+        width: 10%;
+        text-align: left;
+        line-height: 30px;
+        margin-left: 20px;
+    }

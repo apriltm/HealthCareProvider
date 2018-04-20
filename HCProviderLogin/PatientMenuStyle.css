@@ -15,23 +15,24 @@ body {
     background-position: top center;
     position: relative;
     text-align: center;
-    z-index: -9999;
+    z-index: 99;
 }
 
-#alignSide img{
+#alignSide img {
     padding-left: 5px;
 }
 
 .container {
-    top: 50px;
+    top: 0px;
     left: 450px;
     background-color: #ccc;
     width: 600px;
-    height: 550px;
+    height: 330px;
     position: relative;
     background-position: top center;
-    z-index: -99999;
+    z-index: -99;
 }
+
 
     .container h1 {
         font-family: 'Open Sans Condensed', sans-serif;
@@ -50,4 +51,3 @@ img {
     -webkit-filter: grayscale(100%); /* For safari */
     filter: grayscale(100%);
 }
-

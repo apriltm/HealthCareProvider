@@ -19,8 +19,13 @@ namespace HCProviderLogin
 
         protected void BnLogin_Click(object sender, EventArgs e)
         {
-           
+            
 
+            string username = TextBox1.Text;
+            string password = TextBox2.Text;
+
+            Console.WriteLine(username);
+            Console.Read();
         }
     }
 }

@@ -105,11 +105,15 @@
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminMenu.aspx" />
     <Content Include="AdminMenuStyle.css" />
+    <Content Include="Calendar.aspx" />
+    <Content Include="Calendar.css" />
     <Content Include="DoctorMenuStyle.css" />
     <Content Include="Global.asax" />
+    <Content Include="HealthRecord.aspx" />
     <Content Include="OpeningLoginStyle.css" />
     <Content Include="PatientMenu.aspx" />
     <Content Include="PatientMenuStyle.css" />
+    <Content Include="Prescriptions.aspx" />
     <Content Include="ScheduleAppt.aspx" />
     <Content Include="ScheduleApptStyle.css" />
     <Content Include="Web.config" />
@@ -135,8 +139,22 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HealthRecord.aspx.cs">
+      <DependentUpon>HealthRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthRecord.aspx.designer.cs">
+      <DependentUpon>HealthRecord.aspx</DependentUpon>
     </Compile>
     <Compile Include="passwordGenerator.cs" />
     <Compile Include="PatientMenu.aspx.cs">
@@ -145,6 +163,13 @@
     </Compile>
     <Compile Include="PatientMenu.aspx.designer.cs">
       <DependentUpon>PatientMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prescriptions.aspx.cs">
+      <DependentUpon>Prescriptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prescriptions.aspx.designer.cs">
+      <DependentUpon>Prescriptions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScheduleAppt.aspx.cs">
