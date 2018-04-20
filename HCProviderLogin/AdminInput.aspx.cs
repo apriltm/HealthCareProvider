@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace HCProviderLogin
 {
-    public partial class AdminMenu : System.Web.UI.Page
+    public partial class AdminInput : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnInfo_Click(object sender, EventArgs e)
+        protected void btnNewD_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminInput.aspx");
+            Response.Redirect("NewDoctorA.Aspx");
         }
     }
 }
