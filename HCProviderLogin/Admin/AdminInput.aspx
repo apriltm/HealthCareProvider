@@ -4,17 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" type="text/css" href="MenuStyle.css">
-    <title>Welcome to the Health Care Provider Website</title>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div><div class="header">Welcome, !</div>
-            <div class="container"><h1>INPUT</h1><br /><br />
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" CssClass="labelClass" Text="Patient"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Patient"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -28,7 +30,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label2" runat="server" CssClass="labelClass" Text="Doctor"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Doctor"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -40,7 +42,7 @@
                     <asp:Button ID="btnUpdateD" runat="server" Text="Update" />
                 </td>
             </tr>
-        </table></div></div>
+        </table>
     </form>
 </body>
 </html>

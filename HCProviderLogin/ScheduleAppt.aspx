@@ -11,30 +11,23 @@
  <link rel="stylesheet" type="text/css" href="ScheduleApptStyle.css">
     <script src="jquery-3.3.1.min.js"></script>
     <title>Welcome to the Health Care Provider Website</title>
-     <script>
+    <script>
          $(document).ready(function () {
            $("#location").click(function () {
               $("#panel").slideDown("slow");
               });
            });
-      </script>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-    </style>
+      </script> 
+
 </head>
 
 <body>
     <form id="form1" runat="server">
         <div><div class="header">Welcome, !</div>
             <div class="container"><h1>SCHEDULE APPOINTMENT</h1><br /><br />
-                <div id="location"><br />
-                </div>
                 <div id="panel">Houston</div>
             </div>
           
-        </div>
                     <table class="auto-style1">
                         <tr>
                             <td>
@@ -82,7 +75,12 @@
                                 </asp:DropDownList>
                             </td>
                         </tr>
+                        <tr><td>
+                                    <asp:Button ID="Button1" runat="server" Text="Request" /></td></tr>
                     </table>
+          
+          
+        </div>
     </form>
 </body>
 </html>

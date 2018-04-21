@@ -10,7 +10,7 @@
 namespace HCProviderLogin {
     
     
-    public partial class ScheduleAppt {
+    public partial class AdminInput {
         
         /// <summary>
         /// form1 control.
@@ -31,13 +31,22 @@ namespace HCProviderLogin {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// DDloc control.
+        /// btnNewP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDloc;
+        protected global::System.Web.UI.WebControls.Button btnNewP;
+        
+        /// <summary>
+        /// btnUpdateP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdateP;
         
         /// <summary>
         /// Label2 control.
@@ -49,57 +58,21 @@ namespace HCProviderLogin {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// DDrea control.
+        /// btnNewD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDrea;
+        protected global::System.Web.UI.WebControls.Button btnNewD;
         
         /// <summary>
-        /// Label3 control.
+        /// btnUpdateD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// TextBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// Label4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
-        
-        /// <summary>
-        /// DDtime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDtime;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnUpdateD;
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CalenderT.aspx.cs" Inherits="HCProviderLogin.Calender_testing" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CalendarT.aspx.cs" Inherits="HCProviderLogin.Calender_testing" %>
 
 <!DOCTYPE html>
 
@@ -8,18 +8,19 @@
     <link href="css/pikaday.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="ScheduleApptStyle.css">
+
     <script src="pikaday.js"></script>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-    </style>
+    
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-
-            <table class="auto-style1">
+        <div><div class="header">Welcome, !</div>
+            <div class="container"><h1>WORK SCHEDULE</h1><br /><br />
+                <div id="panel">Houston</div>
+            </div>
+          
+                    <table class="auto-style1">
                 <tr>
                     <td>
                         <asp:Label ID="Label1" runat="server" Text="Date"></asp:Label>

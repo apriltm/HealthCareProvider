@@ -105,21 +105,19 @@
     <Content Include="AdminInput.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminMenu.aspx" />
-    <Content Include="AdminMenuStyle.css" />
     <Content Include="Calendar.aspx" />
     <Content Include="Calendar.css" />
-    <Content Include="CalenderT.aspx" />
+    <Content Include="CalendarT.aspx" />
     <Content Include="css\pikaday.css" />
     <Content Include="css\site.css" />
     <Content Include="css\theme.css" />
     <Content Include="css\triangle.css" />
-    <Content Include="DoctorMenuStyle.css" />
     <Content Include="Global.asax" />
     <Content Include="HealthRecord.aspx" />
     <Content Include="NewDoctorA.aspx" />
     <Content Include="OpeningLoginStyle.css" />
     <Content Include="PatientMenu.aspx" />
-    <Content Include="PatientMenuStyle.css" />
+    <Content Include="MenuStyle.css" />
     <Content Include="pikaday.js" />
     <Content Include="Prescriptions.aspx" />
     <Content Include="ScheduleAppt.aspx" />
@@ -161,12 +159,12 @@
     <Compile Include="Calendar.aspx.designer.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CalenderT.aspx.cs">
-      <DependentUpon>CalenderT.aspx</DependentUpon>
+    <Compile Include="CalendarT.aspx.cs">
+      <DependentUpon>CalendarT.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CalenderT.aspx.designer.cs">
-      <DependentUpon>CalenderT.aspx</DependentUpon>
+    <Compile Include="CalendarT.aspx.designer.cs">
+      <DependentUpon>CalendarT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
