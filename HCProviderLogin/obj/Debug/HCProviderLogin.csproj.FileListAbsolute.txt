@@ -101,6 +101,10 @@ C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\Micros
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.AppContext.dll
+<<<<<<< HEAD
+=======
+C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Collections.Immutable.dll
+>>>>>>> 2e57e9b1c3bd832d835a34b4bef2c2b41b88e26b
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Console.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Diagnostics.Process.dll
@@ -154,4 +158,8 @@ C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\System.Net.Ht
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\System.Web.Http.xml
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\System.Web.Http.WebHost.xml
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Collections.Immutable.dll
+=======
+C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csprojResolveAssemblyReference.cache
+>>>>>>> 2e57e9b1c3bd832d835a34b4bef2c2b41b88e26b
