@@ -8,17 +8,17 @@ public class Program
 {
     public static void Main()
     {
-        bool includeLowercase = true;
-        bool includeUppercase = true;
+        bool includeLowercase = false;
+        bool includeUppercase = false;
         bool includeNumeric = true;
-        bool includeSpecial = true;
-        int lengthOfPassword = 16;
+        bool includeSpecial = false;
+        int lengthOfPassword = 9;
 
-        string password = PasswordGenerator.GeneratePassword(includeLowercase, includeUppercase, includeNumeric, includeSpecial, lengthOfPassword);
+        string password = PasswordGenerator.GeneratePassword(includeNumeric,lengthOfPassword);
 
-        while (!PasswordGenerator.PasswordIsValid(includeLowercase, includeUppercase, includeNumeric, includeSpecial, password))
+        while (!PasswordGenerator.PasswordIsValid(includeNumeric, password))
         {
-            password = PasswordGenerator.GeneratePassword(includeLowercase, includeUppercase, includeNumeric, includeSpecial, lengthOfPassword);
+            password = PasswordGenerator.GeneratePassword(includeNumeric,lengthOfPassword);
         }
 
         System.Console.WriteLine(password);
@@ -40,13 +40,10 @@ namespace CodeShare.Library.Passwords
         /// <param name="includeSpaces">Bool to say if spaces are required</param>
         /// <param name="lengthOfPassword">Length of password required. Should be between 8 and 128</param>
         /// <returns></returns>
-        public static string GeneratePassword(bool includeLowercase, bool includeUppercase, bool includeNumeric, bool includeSpecial, int lengthOfPassword)
+        public static string GeneratePassword(bool includeNumeric,int lengthOfPassword)
         {
             const int MAXIMUM_IDENTICAL_CONSECUTIVE_CHARS = 2;
-            const string LOWERCASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
-            const string UPPERCASE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             const string NUMERIC_CHARACTERS = "0123456789";
-            const string SPECIAL_CHARACTERS = @"!#$%&*@\";
             const int PASSWORD_LENGTH_MIN = 8;
             const int PASSWORD_LENGTH_MAX = 128;
 
@@ -57,24 +54,9 @@ namespace CodeShare.Library.Passwords
 
             string characterSet = "";
 
-            if (includeLowercase)
-            {
-                characterSet += LOWERCASE_CHARACTERS;
-            }
-
-            if (includeUppercase)
-            {
-                characterSet += UPPERCASE_CHARACTERS;
-            }
-
             if (includeNumeric)
             {
                 characterSet += NUMERIC_CHARACTERS;
-            }
-
-            if (includeSpecial)
-            {
-                characterSet += SPECIAL_CHARACTERS;
             }
 
             char[] password = new char[lengthOfPassword];
@@ -108,18 +90,13 @@ namespace CodeShare.Library.Passwords
         /// <param name="includeSpecial">Bool to say if special characters are required</param>
         /// <param name="password">Generated password</param>
         /// <returns>True or False to say if the password is valid or not</returns>
-        public static bool PasswordIsValid(bool includeLowercase, bool includeUppercase, bool includeNumeric, bool includeSpecial, string password)
+        public static bool PasswordIsValid(bool includeNumeric,string password)
         {
-            const string REGEX_LOWERCASE = @"[a-z]";
-            const string REGEX_UPPERCASE = @"[A-Z]";
             const string REGEX_NUMERIC = @"[\d]";
-            const string REGEX_SPECIAL = @"([!#$%&*@\\])+";
 
-            bool lowerCaseIsValid = !includeLowercase || (includeLowercase && Regex.IsMatch(password, REGEX_LOWERCASE));
-            bool upperCaseIsValid = !includeUppercase || (includeUppercase && Regex.IsMatch(password, REGEX_UPPERCASE));
             bool numericIsValid = !includeNumeric || (includeNumeric && Regex.IsMatch(password, REGEX_NUMERIC));
-            bool symbolsAreValid = !includeSpecial || (includeSpecial && Regex.IsMatch(password, REGEX_SPECIAL));
-            return lowerCaseIsValid && upperCaseIsValid && numericIsValid && symbolsAreValid;
+            
+            return numericIsValid;
         }
     }
 }

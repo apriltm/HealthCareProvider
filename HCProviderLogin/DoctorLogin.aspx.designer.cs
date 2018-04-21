@@ -12,6 +12,7 @@ namespace HCProviderLogin {
     
     public partial class WebForm2 {
         
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,5 +21,10 @@ namespace HCProviderLogin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtuserD;
+        protected global::System.Web.UI.WebControls.TextBox txtpassD;
+        protected global::System.Web.UI.WebControls.Label lblerror;
+        protected global::System.Web.UI.WebControls.Button Button1;
+
     }
 }

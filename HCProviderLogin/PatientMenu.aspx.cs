@@ -13,5 +13,16 @@ namespace HCProviderLogin
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CalenderT.aspx");
+        }
+
+
+        protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)
+        {
+           Response.Redirect("ScheduleAppt.aspx");
+        }
     }
 }

@@ -102,17 +102,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminInput.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminMenu.aspx" />
     <Content Include="AdminMenuStyle.css" />
     <Content Include="Calendar.aspx" />
     <Content Include="Calendar.css" />
+    <Content Include="CalenderT.aspx" />
+    <Content Include="css\pikaday.css" />
+    <Content Include="css\site.css" />
+    <Content Include="css\theme.css" />
+    <Content Include="css\triangle.css" />
     <Content Include="DoctorMenuStyle.css" />
     <Content Include="Global.asax" />
     <Content Include="HealthRecord.aspx" />
+    <Content Include="NewDoctorA.aspx" />
     <Content Include="OpeningLoginStyle.css" />
     <Content Include="PatientMenu.aspx" />
     <Content Include="PatientMenuStyle.css" />
+    <Content Include="pikaday.js" />
     <Content Include="Prescriptions.aspx" />
     <Content Include="ScheduleAppt.aspx" />
     <Content Include="ScheduleApptStyle.css" />
@@ -123,6 +131,13 @@
     <Content Include="DoctorMenu.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminInput.aspx.cs">
+      <DependentUpon>AdminInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminInput.aspx.designer.cs">
+      <DependentUpon>AdminInput.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +161,13 @@
     <Compile Include="Calendar.aspx.designer.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CalenderT.aspx.cs">
+      <DependentUpon>CalenderT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalenderT.aspx.designer.cs">
+      <DependentUpon>CalenderT.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,6 +177,13 @@
     </Compile>
     <Compile Include="HealthRecord.aspx.designer.cs">
       <DependentUpon>HealthRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewDoctorA.aspx.cs">
+      <DependentUpon>NewDoctorA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewDoctorA.aspx.designer.cs">
+      <DependentUpon>NewDoctorA.aspx</DependentUpon>
     </Compile>
     <Compile Include="passwordGenerator.cs" />
     <Compile Include="PatientMenu.aspx.cs">
