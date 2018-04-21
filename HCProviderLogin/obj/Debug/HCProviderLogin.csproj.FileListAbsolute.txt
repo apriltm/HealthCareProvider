@@ -101,6 +101,13 @@ C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\Micros
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.AppContext.dll
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Collections.Immutable.dll
+>>>>>>> 2e57e9b1c3bd832d835a34b4bef2c2b41b88e26b
+>>>>>>> d67bf4078930f2a85b7b194b46db7fabc9a8cf0e
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Console.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Diagnostics.Process.dll
@@ -154,6 +161,7 @@ C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\System.Net.Ht
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\System.Web.Http.xml
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\System.Web.Http.WebHost.xml
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csprojResolveAssemblyReference.cache
 C:\Users\Doge\Desktop\HealthCareProvider4\HCProviderLogin\bin\HCProviderLogin.dll.config
@@ -314,3 +322,10 @@ C:\Users\CMac\Downloads\HealthCareProvider4\HealthCareProvider4\HCProviderLogin\
 C:\Users\CMac\Downloads\HealthCareProvider4\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csproj.CopyComplete
 C:\Users\CMac\Downloads\HealthCareProvider4\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.dll
 C:\Users\CMac\Downloads\HealthCareProvider4\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.pdb
+=======
+<<<<<<< HEAD
+C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\bin\roslyn\System.Collections.Immutable.dll
+=======
+C:\Users\Doge\source\repos\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csprojResolveAssemblyReference.cache
+>>>>>>> 2e57e9b1c3bd832d835a34b4bef2c2b41b88e26b
+>>>>>>> d67bf4078930f2a85b7b194b46db7fabc9a8cf0e
