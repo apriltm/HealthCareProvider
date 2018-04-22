@@ -22,9 +22,9 @@
               
             <b>Username</b> <asp:TextBox ID="txtuserP" runat="server" Width="263px" required=""></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;<b>Password</b>
-            <asp:TextBox ID="txtpassP" runat="server" Width="263px" required=""></asp:TextBox>
+            <asp:TextBox ID="txtpassP" runat="server" Width="263px" required="" TextMode="Password"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Login" Width="665px" Height="35px" CssClass="ButtonSettings" OnClick="Button1_Click" /><br /><label>
-      <input type="checkbox" name="remember"> Remember me?<
+      <input type="checkbox" name="remember"> Remember me?
     </label><br /><br />
             <asp:Button ID="Button2" runat="server" Text="Cancel" Width="132px" CssClass="cancelSettings" PostBackUrl="~/WebForm1.aspx" formnovalidate=""/>
       <span class="psw">Forgot <a href="#">password?</a></span><asp:Label ID="lblerror" runat="server" Text="Incorrect Credentials"></asp:Label>

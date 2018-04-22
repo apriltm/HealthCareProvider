@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 namespace HCProviderLogin
 {
     public partial class ScheduleAppt : System.Web.UI.Page
-    {
+    { /*
         SqlConnection sqlCon = new SqlConnection("Data Source=tcp:groupnine.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=admingroup9;Password=Group9!!");
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -66,11 +66,11 @@ namespace HCProviderLogin
             const int PASSWORD_LENGTH_MIN = 8;
             const int PASSWORD_LENGTH_MAX = 128;
 
-            if (lengthOfPassword < PASSWORD_LENGTH_MIN || lengthOfPassword > PASSWORD_LENGTH_MAX) D
+            if (lengthOfPassword < PASSWORD_LENGTH_MIN || lengthOfPassword > PASSWORD_LENGTH_MAX) 
             {
                 return "Password length must be between 8 and 128.";
             }
-
+            
             string characterSet = "";
 
             if (includeNumeric)
@@ -98,7 +98,7 @@ namespace HCProviderLogin
             }
 
             return string.Join(null, password);
-        }
+        } */
 
     }
 

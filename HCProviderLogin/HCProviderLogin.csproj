@@ -118,6 +118,7 @@
     <Content Include="OpeningLoginStyle.css" />
     <Content Include="PatientMenu.aspx" />
     <Content Include="MenuStyle.css" />
+    <Content Include="PatientPrescription.aspx" />
     <Content Include="pikaday.js" />
     <Content Include="Prescriptions.aspx" />
     <Content Include="ScheduleAppt.aspx" />
@@ -190,6 +191,13 @@
     </Compile>
     <Compile Include="PatientMenu.aspx.designer.cs">
       <DependentUpon>PatientMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientPrescription.aspx.cs">
+      <DependentUpon>PatientPrescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientPrescription.aspx.designer.cs">
+      <DependentUpon>PatientPrescription.aspx</DependentUpon>
     </Compile>
     <Compile Include="Prescriptions.aspx.cs">
       <DependentUpon>Prescriptions.aspx</DependentUpon>
