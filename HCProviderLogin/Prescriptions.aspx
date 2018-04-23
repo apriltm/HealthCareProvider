@@ -4,24 +4,77 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" type="text/css" href="MenuStyle.css">
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css" />
     <title>Welcome to the Health Care Provider Website</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 21px;
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div><div class="header">Welcome!</div>
-            <div class="container"><h1>INPUT</h1><br /><br />
+            <div class="container">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style3">
+                            <asp:Label ID="lblAp" runat="server" Text="Appointment ID"></asp:Label>
+                        </td>
+                        <td class="auto-style3">
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:Label ID="Label2" runat="server" Text="Refills" Visible="False"></asp:Label>
+                        </td>
+                        <td class="auto-style2">
+                            <asp:TextBox ID="TextBox2" runat="server" TextMode="Number"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblmed" runat="server" Text="Medication"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:DropDownList ID="DropDownList1" runat="server">
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblPaID" runat="server" Text="Patient ID"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+                            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Back" />
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br /><br />
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" CssClass="labelClass" Text="Patient" align="center" style="margin-left: 550px; margin-top: -50px; padding-left: 25px; position: absolute;" /></asp:Label>
+                    </asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="btnNewP" runat="server" Text="Order Prescription" OnClick="goTo" align="center" style="margin-left: 650px; margin-top: -50px; padding-left: 25px; position: absolute;" />
-                </td>
+                    &nbsp;</td>
             </tr>
         </table></div></div>
     </form>

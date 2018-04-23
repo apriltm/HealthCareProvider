@@ -15,7 +15,7 @@
                 
                 <asp:ImageButton runat="server" ID="ImageButton2" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/258-Document_file_paper_text-64.png" PostBackUrl="~/HealthRecord.aspx" title="View Patients' Health Records" align="center" style="margin-left: 650px; margin-top: -50px; padding-left: 25px; position: absolute;" />
                     
-                 <asp:ImageButton runat="server" ID="ImageButton3" ImageUrl="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" PostBackUrl="~/Prescription.aspx" title="View Patients' Prescriptions" align="center" style="margin-left: 750px; margin-top: -50px; padding-left: 25px; position: absolute;" />
+                 <asp:ImageButton runat="server" ID="ImageButton3" ImageUrl="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" PostBackUrl="~/Prescriptions.aspx" title="View Patients' Prescriptions" align="center" style="margin-left: 750px; margin-top: -50px; padding-left: 25px; position: absolute;" />
                 
                                 <br /><br /><asp:Button ID="Button2" runat="server" Text="LogOut" PostBackUrl="~/Main.aspx"/>
 

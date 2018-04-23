@@ -19,14 +19,22 @@
     <form id="form1" runat="server">
         <div><div class="header">Welcome!</div>
             <div class="container"><h1>MAIN MENU</h1><br />
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
                     <Columns>
                         <asp:BoundField DataField="ApptID" HeaderText="ApptID" SortExpression="ApptID" />
-                        <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
+                        <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" DataFormatString="{0:dd MMMM yyyy}" />
                         <asp:BoundField DataField="MedicationName" HeaderText="MedicationName" SortExpression="MedicationName" />
                         <asp:BoundField DataField="Refills" HeaderText="Refills" SortExpression="Refills" />
                         <asp:BoundField DataField="PrescriptionID" HeaderText="PrescriptionID" SortExpression="PrescriptionID" />
                     </Columns>
+                    <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                    <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                    <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#242121" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HealthCareConnectionString %>" SelectCommand="SELECT Appointments.ApptID, Appointments.Date, MedicationType.MedicationName, Prescriptions.Refills, Prescriptions.PrescriptionID FROM Appointments INNER JOIN Prescriptions ON Appointments.ApptID = Prescriptions.ApptID INNER JOIN MedicationType ON Prescriptions.MedicationID = MedicationType.MedicationID WHERE Appointments.PatientID = @PatientID">
                     <SelectParameters>

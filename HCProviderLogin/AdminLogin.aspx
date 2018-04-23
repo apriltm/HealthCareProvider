@@ -26,7 +26,7 @@
             <asp:Button ID="Button1" runat="server" Text="Login" Width="665px" Height="35px" CssClass="ButtonSettings" OnClick="Button1_Click" /><br /><label>
       <input type="checkbox" name="remember"> Remember me?
     </label><br /><br />
-            <asp:Button ID="Button2" runat="server" Text="Cancel" Width="132px" CssClass="cancelSettings" PostBackUrl="~/Main.aspx" formnovalidate/>
+            <asp:Button ID="Button2" runat="server" Text="Cancel" Width="132px" CssClass="cancelSettings" PostBackUrl="~/Main.aspx" formnovalidate=""/>
       <span class="psw">Forgot <a href="#">password?</a></span><asp:Label ID="lblerror" runat="server" ForeColor="Red" Text="Incorrect Credentials"></asp:Label>
 &nbsp;</p>
   </div>

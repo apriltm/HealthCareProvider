@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ApptID" DataSourceID="SqlDataSource1" OnRowUpdated="GridView1_RowUpdated">
+                    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ApptID" DataSourceID="SqlDataSource1" OnRowUpdated="GridView1_RowUpdated" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
                         <Columns>
                             <asp:CommandField ShowEditButton="True" />
                             <asp:BoundField DataField="ApptID" HeaderText="ApptID" ReadOnly="True" SortExpression="ApptID" />
@@ -47,6 +47,14 @@
                             <asp:BoundField DataField="DoctorID" HeaderText="DoctorID" ReadOnly="True" SortExpression="DoctorID" />
                             <asp:BoundField DataField="PatientID" HeaderText="PatientID" ReadOnly="True" SortExpression="PatientID" />
                         </Columns>
+                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                        <SortedDescendingHeaderStyle BackColor="#242121" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HealthCareConnectionString %>" SelectCommand="SELECT Appointments.ApptID, Appointments.Date, Appointments.StatusID, Offices.OfficeName, StatusType.Status, TimeSlot.TimeSlot, VisitReason.VisitReasonName, Appointments.DoctorID, Appointments.PatientID FROM Appointments INNER JOIN Offices ON Appointments.OfficeID = Offices.OfficeID INNER JOIN StatusType ON Appointments.StatusID = StatusType.StatusID INNER JOIN TimeSlot ON Appointments.TimeSlotID = TimeSlot.TimeSlotID INNER JOIN VisitReason ON Appointments.VisitReasonID = VisitReason.VisitReasonID" UpdateCommand="UPDATE [Appointments] SET [StatusID] = @StatusID WHERE [ApptID] = @ApptID">
                         <UpdateParameters>

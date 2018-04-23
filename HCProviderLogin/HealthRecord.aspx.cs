@@ -54,7 +54,8 @@ namespace HCProviderLogin
                 int y = Convert.ToInt32(pt2);
                 int i = x + y;
 
-                SqlCommand cmmd = new SqlCommand("Insert into HealthRecord(PatientID, RecordID, BloodTypeID, Age, Weight, Height, BloodTestID, DiagnosisID, PrescriptionID)  values(@PatientID, @RecordID, @BloodTypeID, @Age, @Weight, @Height, @BloodTestID, @DiagnosisID, @PrescriptionID)", connect);
+                SqlCommand cmmd = new SqlCommand("Insert into HealthRecord(PatientID, RecordID, BloodTypeID, Age, Weight, Height, BloodTestID, DiagnosisID)  values(@PatientID, @RecordID, @BloodTypeID, @Age, @Weight, @Height, @BloodTestID, @DiagnosisID)", connect);
+
 
                 connect.Open();
                 cmmd.Parameters.AddWithValue("@PatientID", paNum.Text.Trim());
@@ -65,15 +66,15 @@ namespace HCProviderLogin
                 cmmd.Parameters.AddWithValue("@Height", i);
                 cmmd.Parameters.AddWithValue("@BloodTestID", bloodTest.SelectedItem.Value);
                 cmmd.Parameters.AddWithValue("@DiagnosisID", Diag.SelectedItem.Value);
-                cmmd.Parameters.AddWithValue("@PrescriptionID", presNum.Text.Trim());
+
                 cmmd.ExecuteNonQuery();
                 connect.Close();
 
-                SqlCommand ccmd = new SqlCommand("Insert into Prescriptions(Refills) values(@Refills)", connect);
+                /*SqlCommand ccmd = new SqlCommand("Insert into Prescriptions(Refills) values(@Refills)", connect);
                 connect.Open();
                 ccmd.Parameters.AddWithValue("@Refills", numRefills.Text.Trim());
                 ccmd.ExecuteNonQuery();
-                connect.Close();
+                connect.Close();*/
             }
 
         }
