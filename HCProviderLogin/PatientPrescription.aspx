@@ -21,19 +21,17 @@
             <div class="container"><h1>MAIN MENU</h1><br /><br />
                 <table class="auto-style1">
             <tr>
-                <td>
-                    <asp:Label ID="Label2" runat="server" Text="Patient #"></asp:Label>
-                </td>
-                <td>
-                    <asp:TextBox ID="txtPatient" runat="server"></asp:TextBox>
-                </td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td class="auto-style3">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">
                     <asp:Label ID="Label3" runat="server" Text="Prescription #"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtPrescription" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </td>
     
                     </tr>

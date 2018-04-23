@@ -33,6 +33,8 @@
                     </SelectParameters>
                 </asp:SqlDataSource>
 
+                <asp:Button ID="Button1" runat="server" Text="Back" PostBackUrl="~/PatientMenu.aspx"/>
+
                 </div></div> 
     </form>
 </body>

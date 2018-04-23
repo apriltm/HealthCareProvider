@@ -82,6 +82,8 @@
                         </tr>
                         <tr><td class="auto-style2">
                                     <asp:Button ID="Button1" runat="server" Text="Request" OnClick="Button1_Click3" />
+                                    <asp:Button ID="Button2" runat="server" Text="Back" PostBackUrl="~/PatientMenu.aspx" />
+                            <br />
                                     <asp:Label ID="LaReq" runat="server" Text="Appointment Requested"></asp:Label>
                             </td></tr>
                     </table>

@@ -17,14 +17,14 @@ namespace HCProviderLogin
             {
                 using (sqlCon)
                 {
-                  /*  SqlCommand sqlCmd = new SqlCommand("Select MedicationName, MedicationID from MedicationType", sqlCon);
-                    sqlCon.Open();
-                    DropDown.DataTextField = "MedicationName";
-                    DropDown.DataValueField = "MedicationID";
-                    DropDown.DataSource = sqlCmd.ExecuteReader();
-                    DropDown.DataBind();
-                    sqlCon.Close();*/
-                    Label6.Visible = false; 
+                    /*  SqlCommand sqlCmd = new SqlCommand("Select MedicationName, MedicationID from MedicationType", sqlCon);
+                      sqlCon.Open();
+                      DropDown.DataTextField = "MedicationName";
+                      DropDown.DataValueField = "MedicationID";
+                      DropDown.DataSource = sqlCmd.ExecuteReader();
+                      DropDown.DataBind();
+                      sqlCon.Close();*/
+                    Label6.Visible = false;
                 }
             }
         }
@@ -33,25 +33,33 @@ namespace HCProviderLogin
         {
             using (sqlCon)
             {
-                sqlCon.Open();
+
+                /*  string str = string.Empty;
+                  str = Convert.ToString(Session["PatientID"]);
+                  SqlCommand sqlc = new SqlCommand("Select Refills From Prescriptions", sqlCon);
+                  SqlCommand declare = new SqlCommand("DECLARE @Refills INT", sqlCon);
+                  SqlCommand set = new SqlCommand("SET @Refills =  (SELECT Refills FROM Prescriptions WHERE [Prescriptions.PatientID] = @PatientID)", sqlCon);
+                  SqlCommand subtract = new SqlCommand("SET @Refills = (Select Refills - 1)", sqlCon);
+                  set.Parameters.AddWithValue("@PatientID", str);
+
+
+                  SqlCommand cmd = new SqlCommand("Update Prescriptions(Refills) values(@Refills)", sqlCon);
+
+                  //window.alert(i > 1 || i >= 0 ? "You cannot order more refills. Your refills are no longer valid." : continue);
+
+                  sqlc.ExecuteNonQuery();
+                  declare.ExecuteNonQuery();
+                  set.ExecuteNonQuery();
+                  subtract.ExecuteNonQuery();
+                  cmd.ExecuteNonQuery();
+                  Label6.Visible = true;*/
                 string str = string.Empty;
                 str = Convert.ToString(Session["PatientID"]);
-                SqlCommand sqlc = new SqlCommand("Select Refills From Prescriptions", sqlCon);
-                SqlCommand declare = new SqlCommand("DECLARE @Refills INT", sqlCon);
-                SqlCommand set = new SqlCommand("SET @Refills =  (SELECT Refills FROM Prescriptions WHERE [Prescriptions.PatientID] = @PatientID)", sqlCon);
-                SqlCommand subtract = new SqlCommand("SET @Refills = (Select Refills - 1)", sqlCon);
-                set.Parameters.AddWithValue("@PatientID", str);
-              
-
-                SqlCommand cmd = new SqlCommand("Update Prescriptions(Refills) values(@Refills)", sqlCon);
-
-                //window.alert(i > 1 || i >= 0 ? "You cannot order more refills. Your refills are no longer valid." : continue);
-
-                sqlc.ExecuteNonQuery();
-                declare.ExecuteNonQuery();
-                set.ExecuteNonQuery();
-                subtract.ExecuteNonQuery();
-                cmd.ExecuteNonQuery();
+                SqlCommand sqlCmd = new SqlCommand("UPDATE Prescriptions SET Refills = Refills - 1 WHERE PrescriptionID =@PrescriptionID AND PatientID=@PatientID", sqlCon);
+                sqlCmd.Parameters.AddWithValue("@PrescriptionID", TextBox1.Text.Trim());
+                sqlCmd.Parameters.AddWithValue("@PatientID", str);
+                sqlCon.Open();
+                sqlCmd.ExecuteNonQuery();
                 Label6.Visible = true;
                 sqlCon.Close();
             }
@@ -59,7 +67,7 @@ namespace HCProviderLogin
 
         protected void goBack(object sender, EventArgs e)
         {
-            Response.Redirect("~/DoctorMenu.aspx");
+            Response.Redirect("~/PatientMenu.aspx");
         }
     }
 }

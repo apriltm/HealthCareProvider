@@ -29,7 +29,9 @@
                 <asp:Parameter DefaultValue="7" Name="StatusID" Type="Int32" />
                 <asp:SessionParameter Name="DoctorID" SessionField="DoctorID" DefaultValue="" />
             </SelectParameters>
-        </asp:SqlDataSource></div></div>
+        </asp:SqlDataSource>
+                <asp:Button ID="Button1" runat="server" Text="Back" PostBackUrl="~/ViewAppointment.aspx"/>
+                    </div></div>
     </form>
 </body>
 </html>

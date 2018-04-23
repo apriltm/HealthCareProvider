@@ -52,6 +52,7 @@
                     <tr>
                         <td class="auto-style4">
                             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Cancel" Width="60px" />
+                            <asp:Button ID="Button2" runat="server" Text="Back" PostBackUrl="~/PatientMenu.aspx"/>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
