@@ -11,7 +11,9 @@
     <form id="form1" runat="server">
                 <div><div class="header">Welcome, !</div>
             <div class="container"><h1>MAIN MENU</h1><br /><br />
-                  <asp:ImageButton runat="server" ID="Button1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" OnClick="Button1_Click" title="View/Approve/Cancel Appointments" align="center" style="margin-left: 550px; margin-top: -50px; padding-left: 25px; position: absolute;" /><br /><br />
+                  <asp:ImageButton runat="server" ID="Button1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" OnClick="Button1_Click" title="View/Approve/Cancel Appointments" align="center" style="margin-left: 550px; margin-top: -50px; padding-left: 25px; position: absolute;" />
+                
+                <br /><br /><asp:Button ID="Button2" runat="server" Text="LogOut" PostBackUrl="~/Main.aspx"/>
             </div></div>
           
         </div>

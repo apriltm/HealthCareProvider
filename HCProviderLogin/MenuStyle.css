@@ -3,6 +3,7 @@
 body {
     background-color: #aaa;
     background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/squairy_light.png');
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .header {

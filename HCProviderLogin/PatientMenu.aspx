@@ -20,6 +20,7 @@
                 <asp:ImageButton runat="server" ID="ImageButton4" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/258-Document_file_paper_text-64.png" PostBackUrl="~/ViewHealthRecord.aspx" title="View Health Records" align="center" style="margin-top: -70px; margin-left: 850px; padding-left: 25px; position: absolute;" />
 
                                 <asp:ImageButton runat="server" ID="ImageButton5" ImageUrl="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" PostBackUrl="~/PatientPrescription.aspx" title="Order Prescriptions" align="center" style="margin-top: -50px; margin-left: 950px; padding-left: 25px; position: absolute;" />
+                                <br /><br /><asp:Button ID="Button2" runat="server" Text="LogOut" PostBackUrl="~/Main.aspx"/>
 
             </div>
           
