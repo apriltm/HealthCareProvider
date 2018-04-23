@@ -13,6 +13,7 @@
             <div class="container"><h1>MAIN MENU</h1><br /><br />
                   <asp:ImageButton runat="server" ID="ImageButton1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" PostBackUrl="~/Calendar.aspx" title="View/Approve/Cancel Appointments" align="center" style="margin-left: 550px; margin-top: -50px; padding-left: 25px; position: absolute;" /><br /><br />
                 <asp:Button ID="btnInfo" runat="server" OnClick="btnInfo_Click" Text="Input info" style="text-align: center; position: absolute;"/>               
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="App Approval" />
             </div></div>
           
         </div>

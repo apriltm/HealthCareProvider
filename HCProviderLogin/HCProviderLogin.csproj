@@ -105,6 +105,7 @@
     <Content Include="AdminInput.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminMenu.aspx" />
+    <Content Include="AppointApproval.aspx" />
     <Content Include="Calendar.aspx" />
     <Content Include="Calendar.css" />
     <Content Include="CalendarT.aspx" />
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="AdminMenu.aspx.designer.cs">
       <DependentUpon>AdminMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppointApproval.aspx.cs">
+      <DependentUpon>AppointApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppointApproval.aspx.designer.cs">
+      <DependentUpon>AppointApproval.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />

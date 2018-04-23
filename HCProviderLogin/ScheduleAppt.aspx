@@ -19,6 +19,12 @@
            });
       </script> 
 
+    <style type="text/css">
+        .auto-style2 {
+            width: 307px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -30,7 +36,7 @@
           
                     <table class="auto-style1">
                         <tr>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:Label ID="Label1" runat="server" Text="Location"></asp:Label>
                             </td>
                             <td>
@@ -39,7 +45,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:Label ID="Label2" runat="server" Text="Main reason for visit"></asp:Label>
                             </td>
                             <td>
@@ -47,27 +53,26 @@
                                 </asp:DropDownList>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <asp:Label ID="Label3" runat="server" Text="Date"></asp:Label>
+                                                <tr>
+                            <td class="auto-style2">
+                                <asp:Label ID="Label5" runat="server" Text="Doctor"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                                                                    <script type="text/javascript">
-                var picker = new Pikaday(
-                    {
-                        field: document.getElementById('TextBox1'),
-                        firstDay: 1,
-                        minDate: new Date('2018-01-01'),
-                        maxDate: new Date('2020-12-31'),
-                        yearRange: [2000, 2020],
-                        numberOfMonths: 1
-                    });
-            </script>
+                                <asp:DropDownList ID="DDD" runat="server">
+                                </asp:DropDownList>
                             </td>
                         </tr>
                         <tr>
+                            <td class="auto-style2">
+                                <asp:Label ID="Label3" runat="server" Text="Date"></asp:Label>
+                            </td>
                             <td>
+                                <asp:TextBox ID="TextBox1" runat="server" TextMode="Date"></asp:TextBox>
+                                                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2">
                                 <asp:Label ID="Label4" runat="server" Text="Time"></asp:Label>
                             </td>
                             <td>
@@ -75,8 +80,10 @@
                                 </asp:DropDownList>
                             </td>
                         </tr>
-                        <tr><td>
-                                    <asp:Button ID="Button1" runat="server" Text="Request" /></td></tr>
+                        <tr><td class="auto-style2">
+                                    <asp:Button ID="Button1" runat="server" Text="Request" OnClick="Button1_Click3" />
+                                    <asp:Label ID="LaReq" runat="server" Text="Appointment Requested"></asp:Label>
+                            </td></tr>
                     </table>
           
           

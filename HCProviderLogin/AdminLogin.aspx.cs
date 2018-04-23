@@ -25,10 +25,17 @@ namespace HCProviderLogin
                 sqlCmd.Parameters.AddWithValue("@username", txtuserA.Text.Trim());
                 sqlCmd.Parameters.AddWithValue("@password", txtpassA.Text.Trim());
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+
+                string query2 = "SELECT AdminID FROM AdminLogin WHERE Username=@username2 AND passwd=@password2";
+                SqlCommand sqlCmd2 = new SqlCommand(query2, sqlCon);
+                sqlCmd2.Parameters.AddWithValue("@username2", txtuserA.Text.Trim());
+                sqlCmd2.Parameters.AddWithValue("@password2", txtpassA.Text.Trim());
+                string AID = (string)sqlCmd2.ExecuteScalar();
+                Session["AdminID"] = AID;
+
                 sqlCon.Close();
                 if (count == 1)
-                {
-                    Session["username"] = txtuserA.Text.Trim();
+                { 
                     Response.Redirect("AdminMenu.aspx");
                     lblerror.Text = "Success";
                 }
