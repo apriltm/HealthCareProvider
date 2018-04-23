@@ -124,6 +124,10 @@
     <Content Include="Prescriptions.aspx" />
     <Content Include="ScheduleAppt.aspx" />
     <Content Include="ScheduleApptStyle.css" />
+    <Content Include="ViewAppointment.aspx" />
+    <Content Include="ViewAppointmentD.aspx" />
+    <Content Include="ViewHealthRecord.aspx" />
+    <Content Include="ViewPrescription.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="PatientLogin.aspx" />
@@ -221,6 +225,34 @@
     </Compile>
     <Compile Include="ScheduleAppt.aspx.designer.cs">
       <DependentUpon>ScheduleAppt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAppointment.aspx.cs">
+      <DependentUpon>ViewAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAppointment.aspx.designer.cs">
+      <DependentUpon>ViewAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAppointmentD.aspx.cs">
+      <DependentUpon>ViewAppointmentD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAppointmentD.aspx.designer.cs">
+      <DependentUpon>ViewAppointmentD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHealthRecord.aspx.cs">
+      <DependentUpon>ViewHealthRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewHealthRecord.aspx.designer.cs">
+      <DependentUpon>ViewHealthRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPrescription.aspx.cs">
+      <DependentUpon>ViewPrescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewPrescription.aspx.designer.cs">
+      <DependentUpon>ViewPrescription.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

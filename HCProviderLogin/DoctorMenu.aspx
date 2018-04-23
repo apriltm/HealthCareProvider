@@ -16,6 +16,8 @@
                 <asp:ImageButton runat="server" ID="ImageButton2" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/258-Document_file_paper_text-64.png" PostBackUrl="~/HealthRecord.aspx" title="View Patients' Health Records" align="center" style="margin-left: 650px; margin-top: -50px; padding-left: 25px; position: absolute;" />
                     
                  <asp:ImageButton runat="server" ID="ImageButton3" ImageUrl="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" PostBackUrl="~/Prescription.aspx" title="View Patients' Prescriptions" align="center" style="margin-left: 750px; margin-top: -50px; padding-left: 25px; position: absolute;" />
+                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View Appoint" />
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             </div>
           
         </div>
