@@ -13,7 +13,7 @@
             <div class="header">HEALTH CARE PROVIDER</div>
             </div>
 
-<div class="movebox"></div>
+<div class="movebox">
   <div class="imgcontainer">
     
   </div>
@@ -26,10 +26,10 @@
             <asp:Button ID="Button1" runat="server" Text="Login" Width="665px" Height="35px" CssClass="ButtonSettings" OnClick="Button1_Click" /><br /><label>
       <input type="checkbox" name="remember"> Remember me?
     </label><br /><br />
-            <asp:Button ID="Button2" runat="server" Text="Cancel" Width="132px" CssClass="cancelSettings" PostBackUrl="~/WebForm1.aspx" formnovalidate=""/>
+            <asp:Button ID="Button2" runat="server" Text="Cancel" Width="132px" CssClass="cancelSettings" PostBackUrl="~/Main.aspx" formnovalidate=""/>
       <span class="psw">Forgot <a href="#">password?</a></span><asp:Label ID="lblerror" runat="server" Text="Incorrect Credentials"></asp:Label>
 &nbsp;
-  </div>
+  </div></div>
   
     </form>
 

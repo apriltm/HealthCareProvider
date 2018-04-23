@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div><div class="header">Welcome, !</div>
+        <div><div class="header">Welcome!</div>
             <div class="container"><h1>MAIN MENU</h1><br /><br />
             Patient #
             <asp:TextBox ID="paNum" runat="server" Width="163px"></asp:TextBox>

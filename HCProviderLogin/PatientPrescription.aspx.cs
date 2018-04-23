@@ -33,12 +33,16 @@ namespace HCProviderLogin
         {
             using (sqlCon)
             {
+                string str = string.Empty;
+                str = Convert.ToString(Session["PatientID"]);
                 SqlCommand sqlc = new SqlCommand("Select Refills From Prescriptions", sqlCon);
-                int i = Convert.ToInt32(sqlc);
-                i--;
+                SqlCommand declare = new SqlCommand("DECLARE @Refills INT", sqlCon);
+                SqlCommand set = new SqlCommand("SET @Refills =  SELECT Refills FROM Prescriptions WHERE [Prescriptions.PatientID] = @PatientID", sqlCon);
+                SqlCommand subtract = new SqlCommand("SET @Refills = @Refills - 1", sqlCon);
+                set.Parameters.AddWithValue("@PatientID", str);
+              
 
                 SqlCommand cmd = new SqlCommand("Update Prescriptions(Refills) values(@Refills)", sqlCon);
-                cmd.Parameters.AddWithValue("@Refills", i);
                 
                // alert(i > 1 || i >= 0 ? "You cannot order more refills. Your refills are no longer valid." : continue);
               

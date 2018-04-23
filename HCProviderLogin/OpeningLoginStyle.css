@@ -40,7 +40,7 @@ small, b, a {
 input[type=text], input[type=password] {
     padding: 4px 12px;
     margin: 8px 0;
-   /* display: inline-block;*/
+    /* display: inline-block;*/
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -59,7 +59,7 @@ input[type=text], input[type=password] {
 }
 
     /* Add a hover effect for buttons */
-    .ButtonSettings:hover,.cancelSettings:hover {
+    .ButtonSettings:hover, .cancelSettings:hover {
         opacity: 0.8;
     }
 

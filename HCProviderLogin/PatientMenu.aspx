@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div><div class="header">Welcome, !</div>
+        <div><div class="header">Welcome!</div>
             <div class="container"><h1>MAIN MENU</h1><br /><br />
                 <asp:ImageButton runat="server" ID="ImageButton1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/280-Appointment_calendar_date_month_planner_reminder_schedule_add_plus-64.png" PostBackUrl="~/ScheduleAppt.aspx" title="Schedule an Appointment" align="center" style="margin-left: 550px; margin-top: -50px; padding-left: 25px; position: absolute;" />
                 

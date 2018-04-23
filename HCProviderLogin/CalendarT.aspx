@@ -15,7 +15,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div><div class="header">Welcome, !</div>
+        <div><div class="header">Welcome!</div>
             <div class="container"><h1>WORK SCHEDULE</h1><br /><br />
                 <div id="panel">Houston</div>
             </div>
