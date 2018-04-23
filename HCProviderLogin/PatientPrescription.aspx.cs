@@ -17,14 +17,14 @@ namespace HCProviderLogin
             {
                 using (sqlCon)
                 {
-                    SqlCommand sqlCmd = new SqlCommand("Select MedicationName, MedicationID from MedicationType", sqlCon);
+                  /*  SqlCommand sqlCmd = new SqlCommand("Select MedicationName, MedicationID from MedicationType", sqlCon);
                     sqlCon.Open();
                     DropDown.DataTextField = "MedicationName";
                     DropDown.DataValueField = "MedicationID";
                     DropDown.DataSource = sqlCmd.ExecuteReader();
                     DropDown.DataBind();
-                    sqlCon.Close();
-                    Label6.Visible = false;
+                    sqlCon.Close();*/
+                    Label6.Visible = false; 
                 }
             }
         }
@@ -33,13 +33,16 @@ namespace HCProviderLogin
         {
             using (sqlCon)
             {
-                SqlCommand cmd = new SqlCommand("Insert into Prescriptions(ApptID, PatientID, Refills, PrescriptionID, MedicationID) values(@ApptID, @PatientID, @Refills, @PrescriptionID, @MedicationID)", sqlCon);
+                SqlCommand sqlc = new SqlCommand("Select Refills From Prescriptions", sqlCon);
+                int i = Convert.ToInt32(sqlc);
+                i--;
+
+                SqlCommand cmd = new SqlCommand("Update Prescriptions(Refills) values(@Refills)", sqlCon);
+                cmd.Parameters.AddWithValue("@Refills", i);
                 
-                cmd.Parameters.AddWithValue("@ApptID", txtAppt.Text.Trim());
-                cmd.Parameters.AddWithValue("@PatientID", txtPatient.Text.Trim());
-                cmd.Parameters.AddWithValue("@Refills", txtRefills.Text.Trim());
-                cmd.Parameters.AddWithValue("@PrescriptionID", txtPrescription.Text.Trim());
-                cmd.Parameters.AddWithValue("@MedicationID", DropDown.SelectedItem.Value);
+               // alert(i > 1 || i >= 0 ? "You cannot order more refills. Your refills are no longer valid." : continue);
+              
+               
                 sqlCon.Open();
                 cmd.ExecuteNonQuery();
                 Label6.Visible = true;

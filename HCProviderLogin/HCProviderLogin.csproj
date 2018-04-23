@@ -129,7 +129,7 @@
     <Content Include="ViewHealthRecord.aspx" />
     <Content Include="ViewPrescription.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Main.aspx" />
     <Content Include="PatientLogin.aspx" />
     <Content Include="DoctorLogin.aspx" />
     <Content Include="DoctorMenu.aspx" />
@@ -254,12 +254,12 @@
     <Compile Include="ViewPrescription.aspx.designer.cs">
       <DependentUpon>ViewPrescription.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="PatientLogin.aspx.cs">
       <DependentUpon>PatientLogin.aspx</DependentUpon>

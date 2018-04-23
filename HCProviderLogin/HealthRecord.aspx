@@ -43,6 +43,10 @@
                 Prescription #
             <asp:TextBox ID="presNum" runat="server">
             </asp:TextBox><br />
+                Refills
+                <asp:TextBox ID="numRefills" runat="server"></asp:TextBox>
+
+                <br />
                 <asp:Button ID="sss" runat="server" OnClick="sub" Text="submit" />
         </div></div>
     </form>

@@ -68,6 +68,12 @@ namespace HCProviderLogin
                 cmmd.Parameters.AddWithValue("@PrescriptionID", presNum.Text.Trim());
                 cmmd.ExecuteNonQuery();
                 connect.Close();
+
+                SqlCommand ccmd = new SqlCommand("Insert into Prescriptions(Refills) values(@Refills)", connect);
+                connect.Open();
+                ccmd.Parameters.AddWithValue("@Refills", numRefills.Text.Trim());
+                ccmd.ExecuteNonQuery();
+                connect.Close();
             }
 
         }
