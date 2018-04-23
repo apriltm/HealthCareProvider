@@ -13,7 +13,7 @@ namespace HCProviderLogin
         {
             string str = string.Empty;
             str = (string)Session["DoctorID"];
-            Label1.Text = str;
+            //Label1.Text = str;
         }
 
         protected void Button1_Click(object sender, EventArgs e)

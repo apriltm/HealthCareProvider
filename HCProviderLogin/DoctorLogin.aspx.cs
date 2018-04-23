@@ -28,6 +28,15 @@ namespace HCProviderLogin
                 sqlCmd.Parameters.AddWithValue("@password", txtpassD.Text.Trim());
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 sqlCon.Close();
+
+                sqlCon.Open();
+                string query2 = "SELECT DoctorID FROM DoctorLogin WHERE Username=@username2 AND passwd=@password2";
+                SqlCommand sqlCmd2 = new SqlCommand(query2, sqlCon);
+                sqlCmd2.Parameters.AddWithValue("@username2", txtuserD.Text.Trim());
+                sqlCmd2.Parameters.AddWithValue("@password2", txtpassD.Text.Trim());
+                string PID = (string)sqlCmd2.ExecuteScalar();
+                sqlCon.Close();
+                Session["DoctorID"] = PID;
                 if (count == 1)
                 {
                     Session["username"] = txtuserD.Text.Trim();
