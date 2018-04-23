@@ -39,47 +39,33 @@ namespace HCProviderLogin
                 Diag.DataBind();
                 connect.Close();
 
-                SqlCommand command3 = new SqlCommand("Select Feet from FeetID", connect);
-                connect.Open();
-                heNum1.DataTextField = "Feet";
-                heNum1.DataValueField = "Feet";
-                heNum1.DataSource = command3.ExecuteReader();
-                heNum1.DataBind();
-                connect.Close();
-
-                SqlCommand command4 = new SqlCommand("Select Inches from InchID", connect);
-                connect.Open();
-                heNum2.DataTextField = "Inches";
-                heNum2.DataValueField = "Inches";
-                heNum2.DataSource = command3.ExecuteReader();
-                heNum2.DataBind();
-                connect.Close();
             }
         }
 
         protected void sub(object sender, EventArgs e)
         {
-
+            SqlConnection connect = new SqlConnection("Data Source=tcp:groupnine.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=admingroup9;Password=Group9!!");
             using (connect)
             {
 
-                string pt1 = heNum1.SelectedValue.ToString();
-                string pt2 = heNum2.SelectedValue.ToString();
-                string temp = pt1 + pt2;
+                string pt1 = heNum1.Text.ToString();
+                string pt2 = heNum2.Text.ToString();
+                int x = Convert.ToInt32(pt1) * 12;
+                int y = Convert.ToInt32(pt2);
+                int i = x + y;
 
                 SqlCommand cmmd = new SqlCommand("Insert into HealthRecord(PatientID, RecordID, BloodTypeID, Age, Weight, Height, BloodTestID, DiagnosisID, PrescriptionID)  values(@PatientID, @RecordID, @BloodTypeID, @Age, @Weight, @Height, @BloodTestID, @DiagnosisID, @PrescriptionID)", connect);
-                
 
+                connect.Open();
                 cmmd.Parameters.AddWithValue("@PatientID", paNum.Text.Trim());
                 cmmd.Parameters.AddWithValue("@RecordID", reNum.Text.Trim());
                 cmmd.Parameters.AddWithValue("@BloodTypeID", bloodT.SelectedItem.Value);
                 cmmd.Parameters.AddWithValue("@Age", ageNum.Text.Trim());
                 cmmd.Parameters.AddWithValue("@Weight", weNum.Text.Trim());
-                cmmd.Parameters.AddWithValue("@Height", temp);
+                cmmd.Parameters.AddWithValue("@Height", i);
                 cmmd.Parameters.AddWithValue("@BloodTestID", bloodTest.SelectedItem.Value);
                 cmmd.Parameters.AddWithValue("@DiagnosisID", Diag.SelectedItem.Value);
                 cmmd.Parameters.AddWithValue("@PrescriptionID", presNum.Text.Trim());
-                connect.Open();
                 cmmd.ExecuteNonQuery();
                 connect.Close();
             }

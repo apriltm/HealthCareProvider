@@ -24,14 +24,14 @@
             <asp:TextBox ID="ageNum" runat="server"></asp:TextBox>
             <br />
             Weight
-            <asp:TextBox ID="weNum" runat="server"></asp:TextBox>
+            <asp:TextBox ID="weNum" runat="server"></asp:TextBox>&nbsp;lbs
             <br />
             Height
-            <asp:DropDownList ID="heNum1" runat="server">
-            </asp:DropDownList>
+            <asp:TextBox ID="heNum1" runat="server">
+            </asp:TextBox>
 &nbsp;feet
-            <asp:DropDownList ID="heNum2" runat="server">
-            </asp:DropDownList>
+            <asp:TextBox ID="heNum2" runat="server">
+            </asp:TextBox>
 &nbsp;inches<br />
             Bloodtest #
             <asp:DropDownList ID="bloodTest" runat="server">

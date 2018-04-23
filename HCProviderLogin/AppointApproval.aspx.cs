@@ -13,25 +13,49 @@ namespace HCProviderLogin
         SqlConnection sqlCon = new SqlConnection("Data Source = tcp:groupnine.database.windows.net; Initial Catalog = HealthCare; Persist Security Info=True;User ID = admingroup9; Password=Group9!!");
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if(!IsPostBack)
-            {
-                using (sqlCon)
-                {
-                    SqlCommand sqlCmd = new SqlCommand("Select StatusID, Status from StatusID", sqlCon);
-                    sqlCon.Open();
-                    DDstatus.DataTextField = "Status";
-                    DDstatus.DataValueField = "StatusID";
-                    DDstatus.DataSource = sqlCmd.ExecuteReader();
-                    DDstatus.DataBind();
-                    sqlCon.Close();
 
-                }
-            }*/
         }
+
+
 
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
 
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void SqlDataSource1_Selecting1(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
+        {
+            using (sqlCon)
+            {
+                /*string str = string.Empty;
+                str = (string)Session["AdminID"];
+                SqlCommand cmd = new SqlCommand("insert into Appointments (AdminID) values (@AdminID)", sqlCon);
+                cmd.Parameters.AddWithValue("@AdminID", str);
+                sqlCon.Open();
+                cmd.ExecuteNonQuery();
+                sqlCon.Close();*/
+            }
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminMenu.aspx");
         }
     }
 }

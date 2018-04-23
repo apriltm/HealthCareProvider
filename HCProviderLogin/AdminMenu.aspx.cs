@@ -14,11 +14,6 @@ namespace HCProviderLogin
 
         }
 
-        protected void btnInfo_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AdminInput.aspx");
-        }
-
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("AppointApproval.aspx");

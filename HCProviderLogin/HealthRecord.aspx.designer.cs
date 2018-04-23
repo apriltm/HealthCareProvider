@@ -73,7 +73,7 @@ namespace HCProviderLogin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList heNum1;
+        protected global::System.Web.UI.WebControls.TextBox heNum1;
         
         /// <summary>
         /// heNum2 control.
@@ -82,7 +82,7 @@ namespace HCProviderLogin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList heNum2;
+        protected global::System.Web.UI.WebControls.TextBox heNum2;
         
         /// <summary>
         /// bloodTest control.
@@ -118,6 +118,6 @@ namespace HCProviderLogin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sButton;
+        protected global::System.Web.UI.WebControls.Button sss;
     }
 }
