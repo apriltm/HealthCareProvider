@@ -27,7 +27,7 @@
       <input type="checkbox" name="remember"> Remember me?
     </label><br /><br />
             <asp:Button ID="Button2" runat="server" Text="Cancel" Width="132px" CssClass="cancelSettings" PostBackUrl="~/Main.aspx" formnovalidate=""/>
-      <span class="psw">Forgot <a href="#">password?</a></span><asp:Label ID="lblerror" runat="server" Text="Incorrect Credentials"></asp:Label>
+      <span class="psw">Forgot <a href="#">password?</a><br /><br />New to our website? <a href="SignUp.aspx">Sign up here</a></span><asp:Label ID="lblerror" runat="server" Text="Incorrect Credentials"></asp:Label>
 &nbsp;
   </div></div>
   
