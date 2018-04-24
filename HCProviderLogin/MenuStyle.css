@@ -12,6 +12,7 @@ body {
     font-size: 100px;
     color: #424242;
     top: 100px;
+    right: 0px;
     height: 300px;
     width: 100%;
     background-position: center top;
@@ -42,6 +43,8 @@ body {
     position: absolute;
     background-position: center top;
     z-index: -99;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
 }
 
 

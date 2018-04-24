@@ -124,6 +124,7 @@
     <Content Include="Prescriptions.aspx" />
     <Content Include="ScheduleAppt.aspx" />
     <Content Include="ScheduleApptStyle.css" />
+    <Content Include="SignUp.aspx" />
     <Content Include="ViewAppointment.aspx" />
     <Content Include="ViewAppointmentD.aspx" />
     <Content Include="ViewHealthRecord.aspx" />
@@ -225,6 +226,13 @@
     </Compile>
     <Compile Include="ScheduleAppt.aspx.designer.cs">
       <DependentUpon>ScheduleAppt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewAppointment.aspx.cs">
       <DependentUpon>ViewAppointment.aspx</DependentUpon>

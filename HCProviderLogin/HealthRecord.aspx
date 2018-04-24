@@ -47,7 +47,8 @@
                 <asp:TextBox ID="numRefills" runat="server"></asp:TextBox>
 
                 <br />
-                <asp:Button ID="sss" runat="server" OnClick="sub" Text="submit" />
+                <asp:Button ID="sss" runat="server" OnClick="sub" Text="Submit" />
+                <asp:Button ID="Button1" PostBackUrl="~/DoctorMenu.aspx" runat="server" Text="Back" />
         </div></div>
     </form>
 </body>

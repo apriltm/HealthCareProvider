@@ -38,7 +38,7 @@
                 <asp:SessionParameter Name="DoctorID" SessionField="DoctorID" DefaultValue="" />
             </SelectParameters>
         </asp:SqlDataSource>
-                <asp:Button ID="Button1" runat="server" Text="Back" PostBackUrl="~/ViewAppointment.aspx"/>
+                <asp:Button ID="Button1" runat="server" Text="Back" PostBackUrl="~/DoctorMenu.aspx"/>
                     </div></div>
     </form>
 </body>

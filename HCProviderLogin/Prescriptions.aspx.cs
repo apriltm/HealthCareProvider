@@ -10,7 +10,7 @@ namespace HCProviderLogin
 {
     public partial class Prescriptions : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection("Data Source=tcp:groupnine.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=admingroup9;PasswordGroup9!!");
+        SqlConnection sqlCon = new SqlConnection("Data Source=tcp:groupnine.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=admingroup9;Password=Group9!!");
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

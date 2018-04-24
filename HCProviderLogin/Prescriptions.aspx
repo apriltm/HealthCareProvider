@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style2">
-                            <asp:Label ID="Label2" runat="server" Text="Refills" Visible="False"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text="Refills"></asp:Label>
                         </td>
                         <td class="auto-style2">
                             <asp:TextBox ID="TextBox2" runat="server" TextMode="Number"></asp:TextBox>

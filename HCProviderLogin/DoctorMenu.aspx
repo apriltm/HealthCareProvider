@@ -11,13 +11,13 @@
     <form id="form1" runat="server">
         <div><div class="header">Welcome!</div>
             <div class="container"><h1>MAIN MENU</h1><br /><br />
-                <asp:ImageButton runat="server" ID="ImageButton1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" OnClick="Button1_Click" title="View Appointments" align="center" style="margin-left: 550px; margin-top: -50px; padding-left: 25px; position: absolute;" />
+                <asp:ImageButton runat="server" ID="ImageButton1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" OnClick="Button1_Click" title="View Appointments" style="margin-top: -50px; position: absolute;" />
+                <br /><br />
+                <asp:ImageButton runat="server" ID="ImageButton2" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/258-Document_file_paper_text-64.png" PostBackUrl="~/HealthRecord.aspx" title="View Patients' Health Records" style="position: absolute;" />
+                    <br /><br /><br /><br />
+                 <asp:ImageButton runat="server" ID="ImageButton3" ImageUrl="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" PostBackUrl="~/Prescriptions.aspx" title="View Patients' Prescriptions" style="position: absolute;" />
                 
-                <asp:ImageButton runat="server" ID="ImageButton2" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/258-Document_file_paper_text-64.png" PostBackUrl="~/HealthRecord.aspx" title="View Patients' Health Records" align="center" style="margin-left: 650px; margin-top: -50px; padding-left: 25px; position: absolute;" />
-                    
-                 <asp:ImageButton runat="server" ID="ImageButton3" ImageUrl="https://cdn0.iconfinder.com/data/icons/typicons-2/24/th-list-64.png" PostBackUrl="~/Prescriptions.aspx" title="View Patients' Prescriptions" align="center" style="margin-left: 750px; margin-top: -50px; padding-left: 25px; position: absolute;" />
-                
-                                <br /><br /><asp:Button ID="Button2" runat="server" Text="LogOut" PostBackUrl="~/Main.aspx"/>
+                                <br /><br /><br /><br /><asp:Button ID="Button2" runat="server" style="position: absolute;" Text="LogOut" PostBackUrl="~/Main.aspx"/>
 
             </div>
           

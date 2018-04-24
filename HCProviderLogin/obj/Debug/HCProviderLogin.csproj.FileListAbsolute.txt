@@ -154,3 +154,4 @@ C:\Users\Doge\Source\Repos\HealthCareProvider5\HCProviderLogin\obj\Debug\HCProvi
 C:\Users\Doge\Source\Repos\HealthCareProvider5\HCProviderLogin\obj\Debug\HCProviderLogin.dll
 C:\Users\Doge\Source\Repos\HealthCareProvider5\HCProviderLogin\obj\Debug\HCProviderLogin.pdb
 C:\Users\Doge\Source\Repos\HealthCareProvider5\HCProviderLogin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CMac\Downloads\HealthCareProvider4\HealthCareProvider4\HCProviderLogin\obj\Debug\HCProviderLogin.csprojResolveAssemblyReference.cache
