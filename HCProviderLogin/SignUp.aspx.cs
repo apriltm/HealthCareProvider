@@ -14,13 +14,7 @@ namespace HCProviderLogin
         SqlConnection con = new SqlConnection("Data Source=tcp:groupnine.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=admingroup9;Password=Group9!!");
         protected void Page_Load(object sender, EventArgs e)
         {
-            string letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            /* string special = "`~!@#$%^&*()_-+={}[]|\:;"''<>,.?/";
-
-            if(TextBox4.Text.Contains(TextBox4.Text.Any(char))
-            {
-                Message
-            } */
+            
             using (con)
             {
                 SqlCommand sqlC = new SqlCommand("Select InsuranceProviderID, InsuranceProviderName from InsuranceProviderType", con);
@@ -95,6 +89,7 @@ namespace HCProviderLogin
             
         }
 
+
         public static string GeneratePassword(bool includeNumeric, int lengthOfPassword)
         {
             const int MAXIMUM_IDENTICAL_CONSECUTIVE_CHARS = 2;
@@ -137,6 +132,11 @@ namespace HCProviderLogin
         }
 
         protected void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox10_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -26,7 +26,7 @@
                 <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
                 <br />
                 Password
-                <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox15" runat="server" TextMode="Password"></asp:TextBox>
                 <br />
                 Sex
                 <asp:DropDownList ID="DropDownList2" runat="server">
@@ -53,7 +53,7 @@
                 <asp:TextBox ID="TextBox9" runat="server" required=""></asp:TextBox>
                 <br />
                 Cell Number
-                <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox10" runat="server" OnTextChanged="TextBox10_TextChanged"></asp:TextBox>
                 <br />
                 Emergency Number
                 <asp:TextBox ID="TextBox11" runat="server" required=""></asp:TextBox>
