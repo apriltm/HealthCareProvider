@@ -12,8 +12,10 @@
                 <div><div class="header">Welcome!</div>
             <div class="container"><h1>MAIN MENU</h1><br /><br />
                   <asp:ImageButton runat="server" ID="Button1" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/278-Appointment_calendar_time_clock_month_planner_reminder_schedule-64.png" OnClick="Button1_Click" title="View/Approve/Cancel Appointments" style="margin-top: -50px; position: absolute;" />
-                
-                <br /><br /><asp:Button ID="Button2" runat="server" Text="LogOut" style="position: absolute;" PostBackUrl="~/Main.aspx"/>
+                                <br /><br /><br /><br />
+                 <asp:ImageButton runat="server" ID="ImageButton4" ImageUrl="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-vol-6/512/258-Document_file_paper_text-64.png" PostBackUrl="~/AdminPastMonth.aspx" title="View Appointments in the Last Month" style="position: absolute;" />
+
+                <br /><br /><br /><br /><asp:Button ID="Button2" runat="server" Text="LogOut" style="position: absolute;" PostBackUrl="~/Main.aspx"/>
             </div></div>
           
         </div>

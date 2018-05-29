@@ -55,6 +55,7 @@ namespace HCProviderLogin
         {
             GridView1.Visible = true;
             GridView2.Visible = false;
+            Response.Redirect("ViewAppointment.aspx");
         }
     }
 }

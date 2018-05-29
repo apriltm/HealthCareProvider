@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace HCProviderLogin
 {
-    public partial class ScheduleAppt : System.Web.UI.Page
+    public partial class Specialist : System.Web.UI.Page
     {
         SqlConnection sqlCon = new SqlConnection("Data Source=tcp:groupnine.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=admingroup9;Password=Group9!!");
         protected void Page_Load(object sender, EventArgs e)
@@ -41,26 +41,27 @@ namespace HCProviderLogin
                     DDloc.DataBind();
                     sqlCon.Close();
 
-                    SqlCommand sqlCmd3 = new SqlCommand("Select Fname, LName, DoctorID from Doctors where DoctorTypeID =1", sqlCon);
+                   /* SqlCommand sqlCmd3 = new SqlCommand("Select DoctorTypeID, DoctorType from DoctorType where DoctorType != 1", sqlCon);
                     sqlCon.Open();
-                    DDD.DataTextField = "LName";
-                    DDD.DataValueField = "DoctorID";
-                    DDD.DataSource = sqlCmd3.ExecuteReader();
+                    DDD.DataTextField = "DoctorType";
+                    DDD.DataValueField = "DoctorTypeID";
+                    DDD.DataSource = sqlCmd3.ExecuteReader(); 
                     DDD.DataBind();
-                    sqlCon.Close();
+                    sqlCon.Close();*/
 
 
 
                     LaReq.Visible = false;
                     Label8.Visible = false;
-                    
-                    
+
+
                 }
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
 
         }
         public static string GeneratePassword(bool includeNumeric, int lengthOfPassword)
@@ -121,9 +122,12 @@ namespace HCProviderLogin
 
                 sqlCon.Open();
                 string str = string.Empty;
+                SqlCommand spe = new SqlCommand("SELECT PrimaryDoctorID from Patient WHERE PatientID=@PatientID", sqlCon);
                 str = Convert.ToString(Session["PatientID"]);
+                spe.Parameters.AddWithValue("@PatientID", str);
+                string PPD = Convert.ToString(spe.ExecuteScalar());
                 string ApID = GeneratePassword(true, 9);
-                SqlCommand cmd = new SqlCommand("insert into Appointments (ApptID,Date,VisitReasonID,StatusID,OfficeID,TimeSlotID, PatientID, DoctorID) values (@ApptID, @Date, @VisitReasonID, @StatusID, @OfficeID, @TimeSlotID, @PatientID, @DoctorID)", sqlCon);
+                SqlCommand cmd = new SqlCommand("insert into Appointments (ApptID,Date,VisitReasonID,StatusID,OfficeID,TimeSlotID, PatientID, DoctorID, Specialist, DoCApprove) values (@ApptID, @Date, @VisitReasonID, @StatusID, @OfficeID, @TimeSlotID, @PatientID, @DoctorID, @Specialist, @DocApprove)", sqlCon);
                 cmd.Parameters.AddWithValue("@ApptID", ApID);
                 cmd.Parameters.AddWithValue("@Date", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@VisitReasonID", DDrea.SelectedItem.Value);
@@ -131,29 +135,36 @@ namespace HCProviderLogin
                 cmd.Parameters.AddWithValue("@OfficeID", DDloc.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@TimeSlotID", DDtime.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@PatientID", str);
-                cmd.Parameters.AddWithValue("@DoctorID", DDD.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("@DoctorID", PPD);
+                cmd.Parameters.AddWithValue("@SpecialIst", DDD.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("@DocApprove", 1);
                 cmd.ExecuteNonQuery();
                 int i;
-                SqlCommand check = new SqlCommand("SELECT StatusID FROM Appointments WHERE ApptID =@ApptID", sqlCon);
+                SqlCommand check = new SqlCommand("SELECT StatusID FROM Appointments WHERE ApptID =@ApptID AND Specialist !=@DoctorTypeID", sqlCon);
                 check.Parameters.AddWithValue("@ApptID", ApID);
+                check.Parameters.AddWithValue("@DoctorTypeID", 1);
                 i = Convert.ToInt32(check.ExecuteScalar());
-                if (i == 6 || i ==7)
+                if (i == 6)
                 {
                     Label8.Visible = true;
-                    
+
                 }
 
                 else
                 {
                     LaReq.Visible = true;
-                    Label8.Visible = false;
                 }
                 //Label7.Text = Convert.ToString(i);
                 sqlCon.Close();
-                
+
 
 
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PatientMenu.aspx");
         }
     }
 

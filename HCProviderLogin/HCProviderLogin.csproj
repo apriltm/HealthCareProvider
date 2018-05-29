@@ -106,6 +106,7 @@
     <Content Include="AdminInput.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminMenu.aspx" />
+    <Content Include="AdminPastMonth.aspx" />
     <Content Include="AppointApproval.aspx" />
     <Content Include="Calendar.aspx" />
     <Content Include="Calendar.css" />
@@ -114,6 +115,7 @@
     <Content Include="css\site.css" />
     <Content Include="css\theme.css" />
     <Content Include="css\triangle.css" />
+    <Content Include="DoctorPastMonth.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HealthRecord.aspx" />
     <Content Include="NewDoctorA.aspx" />
@@ -126,6 +128,8 @@
     <Content Include="ScheduleAppt.aspx" />
     <Content Include="ScheduleApptStyle.css" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Specialist.aspx" />
+    <Content Include="SpeicalistApprove.aspx" />
     <Content Include="ViewAppointment.aspx" />
     <Content Include="ViewAppointmentD.aspx" />
     <Content Include="ViewHealthRecord.aspx" />
@@ -158,6 +162,13 @@
     <Compile Include="AdminMenu.aspx.designer.cs">
       <DependentUpon>AdminMenu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPastMonth.aspx.cs">
+      <DependentUpon>AdminPastMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPastMonth.aspx.designer.cs">
+      <DependentUpon>AdminPastMonth.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppointApproval.aspx.cs">
       <DependentUpon>AppointApproval.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,6 +191,13 @@
     </Compile>
     <Compile Include="CalendarT.aspx.designer.cs">
       <DependentUpon>CalendarT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPastMonth.aspx.cs">
+      <DependentUpon>DoctorPastMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorPastMonth.aspx.designer.cs">
+      <DependentUpon>DoctorPastMonth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -234,6 +252,20 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Specialist.aspx.cs">
+      <DependentUpon>Specialist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Specialist.aspx.designer.cs">
+      <DependentUpon>Specialist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeicalistApprove.aspx.cs">
+      <DependentUpon>SpeicalistApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeicalistApprove.aspx.designer.cs">
+      <DependentUpon>SpeicalistApprove.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewAppointment.aspx.cs">
       <DependentUpon>ViewAppointment.aspx</DependentUpon>

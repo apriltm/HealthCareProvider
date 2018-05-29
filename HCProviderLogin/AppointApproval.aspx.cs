@@ -13,7 +13,8 @@ namespace HCProviderLogin
         SqlConnection sqlCon = new SqlConnection("Data Source = tcp:groupnine.database.windows.net; Initial Catalog = HealthCare; Persist Security Info=True;User ID = admingroup9; Password=Group9!!");
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GridView1.Visible = true;
+            GridView2.Visible = false;
         }
 
 
@@ -56,6 +57,12 @@ namespace HCProviderLogin
         protected void Button1_Click1(object sender, EventArgs e)
         {
             Response.Redirect("AdminMenu.aspx");
+        }
+
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridView1.Visible = false;
+            GridView2.Visible = true;
         }
     }
 }

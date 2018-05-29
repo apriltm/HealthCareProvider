@@ -15,16 +15,16 @@
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
                     <Columns>
                         <asp:BoundField DataField="PatientID" HeaderText="PatientID" SortExpression="PatientID" />
-                        <asp:BoundField DataField="BloodTypeID" HeaderText="BloodTypeID" SortExpression="BloodTypeID" />
                         <asp:BoundField DataField="Age" HeaderText="Age" SortExpression="Age" />
                         <asp:BoundField DataField="Weight" HeaderText="Weight" SortExpression="Weight" />
                         <asp:BoundField DataField="Height" HeaderText="Height" SortExpression="Height" />
-                        <asp:BoundField DataField="BloodTestID" HeaderText="BloodTestID" SortExpression="BloodTestID" />
-                        <asp:BoundField DataField="DiagnosisID" HeaderText="DiagnosisID" SortExpression="DiagnosisID" />
-                        <asp:BoundField DataField="PrescriptionID" HeaderText="PrescriptionID" SortExpression="PrescriptionID" />
-                        <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" DataFormatString="{0:dd MMMM yyyy}" />
+                        <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                         <asp:BoundField DataField="TimeSlot" HeaderText="TimeSlot" SortExpression="TimeSlot" />
                         <asp:BoundField DataField="OfficeName" HeaderText="OfficeName" SortExpression="OfficeName" />
+                        <asp:BoundField DataField="PrescriptionID" HeaderText="PrescriptionID" SortExpression="PrescriptionID" />
+                        <asp:BoundField DataField="DiagnosisName" HeaderText="DiagnosisName" SortExpression="DiagnosisName" />
+                        <asp:BoundField DataField="BloodTypeName" HeaderText="BloodTypeName" SortExpression="BloodTypeName" />
+                        <asp:BoundField DataField="TestName" HeaderText="TestName" SortExpression="TestName" />
                     </Columns>
                     <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                     <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
@@ -35,7 +35,7 @@
                     <SortedDescendingCellStyle BackColor="#E5E5E5" />
                     <SortedDescendingHeaderStyle BackColor="#242121" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HealthCareConnectionString %>" SelectCommand="SELECT HealthRecord.PatientID, HealthRecord.BloodTypeID, HealthRecord.Age, HealthRecord.Weight, HealthRecord.Height, HealthRecord.BloodTestID, HealthRecord.DiagnosisID, HealthRecord.PrescriptionID, Appointments.Date, TimeSlot.TimeSlot, Offices.OfficeName FROM HealthRecord INNER JOIN Appointments ON HealthRecord.RecordID = Appointments.ApptID INNER JOIN TimeSlot ON Appointments.TimeSlotID = TimeSlot.TimeSlotID INNER JOIN Offices ON Appointments.OfficeID = Offices.OfficeID WHERE (HealthRecord.PatientID = @PatientID)">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HealthCareConnectionString %>" SelectCommand="SELECT HealthRecord.PatientID, HealthRecord.Age, HealthRecord.Weight, HealthRecord.Height, Appointments.Date, TimeSlot.TimeSlot, Offices.OfficeName, HealthRecord.PrescriptionID, DiagnosisType.DiagnosisName, BloodType.BloodTypeName, BloodTestType.TestName FROM HealthRecord INNER JOIN Appointments ON HealthRecord.RecordID = Appointments.ApptID INNER JOIN TimeSlot ON Appointments.TimeSlotID = TimeSlot.TimeSlotID INNER JOIN Offices ON Appointments.OfficeID = Offices.OfficeID INNER JOIN BloodTestType ON HealthRecord.BloodTestID = BloodTestType.BloodTestID INNER JOIN BloodType ON HealthRecord.BloodTypeID = BloodType.BloodTypeID INNER JOIN DiagnosisType ON HealthRecord.DiagnosisID = DiagnosisType.DiagnosisID WHERE (HealthRecord.PatientID = @PatientID)">
                     <SelectParameters>
                         <asp:SessionParameter DefaultValue="" Name="PatientID" SessionField="PatientID" />
                     </SelectParameters>

@@ -66,7 +66,7 @@
                 </asp:DropDownList>
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
-                &nbsp;<asp:Button ID="Button2" runat="server" PostBackUrl="~/PatientLogin.aspx" Text="Back" />
+                &nbsp;<asp:Button ID="Button2" runat="server" PostBackUrl="~/PatientLogin.aspx" Text="Back" OnClick="Button2_Click" />
                 <br />
                 <asp:Label ID="Label1" CssClass="labelClass" runat="server" Text="Registration successful!" Visible="False"></asp:Label>
                 <br />
